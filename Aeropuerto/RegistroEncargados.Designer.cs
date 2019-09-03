@@ -42,6 +42,9 @@
             this.textBoxRPass = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.buttonVerRegistros = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -148,7 +151,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(245, 250);
+            this.btnRegistrar.Location = new System.Drawing.Point(75, 242);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 12;
@@ -163,12 +166,43 @@
             this.dtpFecha.Size = new System.Drawing.Size(178, 20);
             this.dtpFecha.TabIndex = 13;
             // 
+            // buttonVerRegistros
+            // 
+            this.buttonVerRegistros.Location = new System.Drawing.Point(387, 242);
+            this.buttonVerRegistros.Name = "buttonVerRegistros";
+            this.buttonVerRegistros.Size = new System.Drawing.Size(112, 23);
+            this.buttonVerRegistros.TabIndex = 14;
+            this.buttonVerRegistros.Text = "Ver Registros";
+            this.buttonVerRegistros.UseVisualStyleBackColor = true;
+            this.buttonVerRegistros.Click += new System.EventHandler(this.buttonVerRegistros_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Location = new System.Drawing.Point(234, 27);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(94, 13);
+            this.lblTitulo.TabIndex = 15;
+            this.lblTitulo.Text = "Nuevo Encargado";
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(229, 242);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 16;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            // 
             // RegistroEncargados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(562, 383);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.buttonVerRegistros);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.textBoxRPass);
@@ -205,5 +239,8 @@
         private System.Windows.Forms.TextBox textBoxRPass;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button buttonVerRegistros;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnModificar;
     }
 }

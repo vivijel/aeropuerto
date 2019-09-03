@@ -34,5 +34,10 @@ namespace Aeropuerto.Clases
             set => fecha_nacimiento = value; }
         public string Clave { get => clave;
             set => clave = value; }
+
+        public override string ToString()
+        {
+            return Email ;
+        }
     }
 }

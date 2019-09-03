@@ -16,6 +16,15 @@ namespace Aeropuerto
         public RegistroEncargados()
         {
             InitializeComponent();
+            btnModificar.Visible = false;
+        }
+        public RegistroEncargados(String Titulo,String Correo)
+        {
+            InitializeComponent();
+            lblTitulo.Text = Titulo;
+            buttonVerRegistros.Visible = false;
+            btnRegistrar.Visible = false;
+
         }
 
         private void RegistroEncargados_Load(object sender, EventArgs e)
@@ -80,9 +89,17 @@ namespace Aeropuerto
             {
                 //todo OK
                 Encargado nuevo = new Encargado(email,nombre,apellido,fecha,clave1);
+                BD.LEncargados.Add(nuevo);
                 MessageBox.Show(nuevo.Fecha_nacimiento.ToString());
+              
             }
 
+        }
+
+        private void buttonVerRegistros_Click(object sender, EventArgs e)
+        {
+            VerEncargados ve = new VerEncargados();
+            ve.ShowDialog();
         }
     }
 }

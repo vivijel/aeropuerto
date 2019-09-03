@@ -61,6 +61,12 @@
     <Compile Include="RegistroEncargados.Designer.cs">
       <DependentUpon>RegistroEncargados.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerEncargados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerEncargados.Designer.cs">
+      <DependentUpon>VerEncargados.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="RegistroEncargados.resx">
       <DependentUpon>RegistroEncargados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerEncargados.resx">
+      <DependentUpon>VerEncargados.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
