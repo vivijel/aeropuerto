@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\BD.cs" />
     <Compile Include="Clases\Encargado.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
